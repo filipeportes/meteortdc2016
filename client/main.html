@@ -1,0 +1,23 @@
+<head>
+    <title>#TheDevConf 2016 | Florianópolis : Trilha JavaScript</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link media="all" type="text/css" href="//s3-sa-east-1.amazonaws.com/globalcodesp/tdc/2015/css/tdc-2015.css"
+          rel="stylesheet">
+    <link media="all" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+          rel="stylesheet">
+    <link media="all" type="text/css" href="css/community.css" rel="stylesheet">
+    <link media="all" type="text/css" href="css/main.css" rel="stylesheet">
+    <script src="//s3-sa-east-1.amazonaws.com/globalcodesp/tdc/2015/js/tdc-2015-jquery-1.11.2.min.js"
+            type="text/javascript"></script>
+</head>
+<template name="Main">
+    {{> top}}
+    <div class="container hidden-lg" style="margin-top: 20px;">
+        <button class="btn btn-primary pull-left" id="prev">Prev</button>
+        <button class="btn btn-primary pull-right" id="next">Next</button>
+    </div>
+    <div id="slide" class="container" style="margin-top: 20px;">
+        {{>Template.dynamic template=content}}
+    </div>
+    {{> footer}}
+</template>
